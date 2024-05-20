@@ -9,7 +9,7 @@ $_POST['per_ingreso'] = htmlspecialchars($_POST['per_ingreso']);
 $_POST['per_salida'] = htmlspecialchars($_POST['per_salida']);
 $_POST['per_motivo'] = htmlspecialchars($_POST['per_motivo']);
 
-if ($_POST['per_nombre'] == '' || $_POST['per_prosedencia'] == '' || $_POST['per_ingreso'] < 0 || $_POST['per_salida'] < 0 || $_POST['per_motivo'== '']  ) {
+if ($_POST['per_nombre'] == '' || $_POST['per_prosedencia'] == '' || $_POST['per_ingreso'] == '' || $_POST['per_salida'] =='' || $_POST['per_motivo'== '']  ) {
     // ALERTA PARA VALIDAR DATOS
     $resultado = [
         'mensaje' => 'DEBE VALIDAR LOS DATOS',
