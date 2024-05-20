@@ -1,3 +1,7 @@
+<?php 
+
+include_once '../templates/header.php'; ?>
+
 <h1 class="text-center">FORMULARIO DE INGRESOS</h1>
 <div class="row justify-content-center">
     <form>
@@ -33,9 +37,10 @@
         </div>
         <div class="row mb-3">
             <div class="col">
-                <button type="submit" class="btn btn-secondary w-100">GUARDAR</button>
+                <button type="submit" class="btn btn-primary w-100">GUARDAR</button>
             </div>
         </div>
 
     </form>
 </div>
+<?php include_once '../templates/footer.php'; ?>
