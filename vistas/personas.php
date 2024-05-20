@@ -4,7 +4,7 @@ include_once '../templates/header.php'; ?>
 
 <h1 class="text-center">FORMULARIO DE INGRESOS</h1>
 <div class="row justify-content-center">
-    <form>
+    <form action="/controladores/personas/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6"action="/TAREA_INSERT_SELECT/controladores/clientes/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         <div class="row mb-3">
             <div class="col">
                 <label for="per_nombre">NOMBRE Y APELLIDO</label>
