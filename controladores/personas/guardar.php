@@ -2,14 +2,11 @@
 
 require '../../modelos/personas.php';
 
-$ingreso = $_POST['per_ingreso'];
-$salida = $_POST['per_salida'];
-
 // VALIDAR INFORMACION
 $_POST['per_nombre'] = htmlspecialchars($_POST['per_nombre']);
 $_POST['per_prsedencia'] = htmlspecialchars($_POST['per_prosedencia']);
-$_POST['per_ingreso'] = filter_var($ingreso, FILTER_VALIDATE_INT);
-$_POST['per_salida'] = filter_var($salida, FILTER_VALIDATE_INT);
+$_POST['per_ingreso'] = htmlspecialchars($_POST['per_ingreso']);
+$_POST['per_salida'] = htmlspecialchars($_POST['per_salida']);
 $_POST['per_motivo'] = htmlspecialchars($_POST['per_motivo']);
 
 if ($_POST['per_nombre'] == '' || $_POST['per_prosedencia'] == '' || $_POST['per_ingreso'] < 0 || $_POST['per_salida'] < 0 || $_POST['per_motivo'== '']  ) {

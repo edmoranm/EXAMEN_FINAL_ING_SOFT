@@ -4,7 +4,7 @@ include_once '../templates/header.php'; ?>
 
 <h1 class="text-center">FORMULARIO DE INGRESOS</h1>
 <div class="row justify-content-center">
-    <form action="/controladores/personas/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6"action="/TAREA_INSERT_SELECT/controladores/clientes/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
+    <form action="/EXAMEN_FINAL_ING_SOFT/controladores/personas/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         <div class="row mb-3">
             <div class="col">
                 <label for="per_nombre">NOMBRE Y APELLIDO</label>
@@ -20,13 +20,13 @@ include_once '../templates/header.php'; ?>
         <div class="row mb-3">
             <div class="col">
                 <label for="per_ingreso">FECHA Y HORA DE INGRESO</label>
-                <input type="date" name="per_ingreso" id="per_ingreso" class="form-control" required>
+                <input type="text_hora" name="per_ingreso" id="per_ingreso" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
                 <label for="per_salida">FECHA Y HORA DE SALIDA</label>
-                <input type="date" name="per_salida" id="per_salida" class="form-control" required>
+                <input type="text_hora" name="per_salida" id="per_salida" class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">
