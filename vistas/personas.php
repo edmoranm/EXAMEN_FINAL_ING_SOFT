@@ -37,7 +37,7 @@ include_once '../templates/header.php'; ?>
         </div>
         <div class="row mb-3">
             <div class="col">
-                <button type="submit" class="btn btn-primary w-100">GUARDAR</button>
+                <button type="submit" class="btn btn-success w-100">GUARDAR</button>
             </div>
         </div>
 
